@@ -1,0 +1,39 @@
+Player(
+  -Health(int)
+  -Stamina(int)
+  -Inventory(list[item])
+  -loadout(dict)
+  -armour_class(int)
+)
+
+item(
+  -consumable(bool)
+  -effect(str)
+  -magnitude_of_effect(int)
+)
+
+spell(
+  -damage(int)
+  -Enemies_can_hit(int)
+  -damage_type(str)
+)
+
+weapon(item)(
+  -damage(int)
+  -melee(bool)
+)
+
+UI(
+  -health_display(label)
+  -stamina_display(label)
+  -loadout_display(label)
+  -inventory_display(label)
+  -action_log(list[str])
+  -show_action_log(button)
+  -tool_tips(label)
+  -action_entry(entry)
+)
+
+actionLog(
+  -actions(label)
+)
